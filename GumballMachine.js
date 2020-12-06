@@ -1,15 +1,15 @@
 class GumballMachine {
-    constructor(smallGumballs, largeGumballs) {
-        this.largeGumballs = largeGumballs;
-        this.smallGumballs = smallGumballs;
+    constructor(params) {
+        this.cost = params.cost;
+        this.count = params.count;
     }
     giveGumball = (size) => {
         if (size == 'small') {
-            this.smallGumballs--
+            this.count.smallGumballs--
             return 'Small Gumball'
         }
         if (size == 'large') {
-            this.largeGumballs--
+            this.count.largeGumballs--
             return 'Large Gumball'
         }
         else {

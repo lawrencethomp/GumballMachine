@@ -1,5 +1,9 @@
-const gumballMachine = () => {
-    return 'enjoy your gumball';
-}
+class Gumball {
+    constructor(params) {
+        this.size = params.size;
+        this.color = params.color;
+        this.gross = params.gross;
+    }
+};
 
-module.exports = gumballMachine;
+module.exports = Gumball
